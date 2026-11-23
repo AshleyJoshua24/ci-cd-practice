@@ -1,0 +1,14 @@
+name: My First CI Pipeline
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+
+      - name: Display message
+        run: echo "Hello from GitHub Actions"
